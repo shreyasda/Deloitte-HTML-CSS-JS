@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee & Department Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Employee & Department Management</h1>
+
+    <!-- Employee Section -->
+    <h2>All Employees</h2>
+    <div id="employeeList"></div>
+    <button onclick="viewAllEmployees()">View All Employees</button>
+
+    <h2>Add Employee</h2>
+    <input type="text" id="addFirstName" placeholder="Enter Employee Name">
+    <input type="number" id="addSalary" placeholder="Enter Salary">
+    <select id="addDepartment" aria-label="Select Department"> 
+        <option value="" disabled selected>Select Department</option>
+        <option value="1">IT</option>
+        <option value="2">HR</option>
+        <option value="3">Fin</option>
+        <option value="4">Sales</option>
+    </select>
+    <button onclick="addEmployee()">Add Employee</button>
+    <div id="addResult"></div>
+
+
+    <!-- Department Section -->
+    <h2>All Departments</h2>
+    <div id="departmentList"></div>
+    <button onclick="viewAllDepartments()">View All Departments</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
